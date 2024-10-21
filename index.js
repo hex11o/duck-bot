@@ -3,7 +3,7 @@ import base58 from 'bs58'
 import { Connection, PublicKey, Keypair, Transaction, ComputeBudgetProgram } from '@solana/web3.js'
 import { Program, AnchorProvider, web3, Wallet } from '@coral-xyz/anchor'
 import { getAssociatedTokenAddress, TOKEN_PROGRAM_ID, ASSOCIATED_TOKEN_PROGRAM_ID } from '@solana/spl-token'
-import idl from './idl.json' assert { type: 'json' }
+import idl from './idl.json' with { type: 'json' }
 
 const PROGRAM_ID = new PublicKey('pvwX4B67eRRjBGQ4jJUtiUJEFQbR4bvG6Wbe6mkCjtt')
 const MINT_ADDRESS = new PublicKey('4ALKS249vAS3WSCUxXtHJVZN753kZV6ucEQC41421Rka')
